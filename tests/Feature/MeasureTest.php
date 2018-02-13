@@ -51,10 +51,10 @@ class MeasureTest extends TestCase
     public function testPutMeasureTest()
     {
         $response = $this->put('/api/measures/11',
-            ['Value'=> '3', 'Description'=>'co5'],
+            ['Value'=> '3', 'Description'=>'co15'],
             ['Accept'=> 'application/json']);
 
-        $response->assertStatus(201);
+        $response->assertStatus(200);
     }
 
     public function testExample()

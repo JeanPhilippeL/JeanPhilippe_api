@@ -69,12 +69,22 @@ class MeasureController extends Controller
      */
     public function update(Request $request, Measure $measure)
     {
-        echo('test');
-        $measure = Measure::Update($measure->id);
+        $measure->Update($request->all());
+        $measure->save();
+        return $measure->all();
+        /*echo('test');
+        $measure = Measure::Update($measure,);
         $measure->Description = $request->input('Value');
         $measure->Description = $request->input('Description');
         $measure->save();
         return new MeasureResource($measure);
+        $item = Item::findOrFail($id);
+        $item->description   = $request::get('description');
+        $item->unit          = $request::get('unit');
+        $item->unit_price    = $request::get('unit_price');
+        $item->average_price = $request::get('average_price');
+        $item->store_id      = $request::get('store');
+        $item->save();*/
     }
 
     /**
