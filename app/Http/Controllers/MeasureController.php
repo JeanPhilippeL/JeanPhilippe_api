@@ -6,6 +6,7 @@ use App\Measure;
 use App\Http\Resources\MeasureResource;
 use App\Http\Requests\MeasurePostRequest;
 use Illuminate\Http\Request;
+use PhpParser\Node\Stmt\Echo_;
 
 class MeasureController extends Controller
 {
@@ -14,21 +15,13 @@ class MeasureController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-   /* public function index()
-    {
-        return['kiwi','banane','orange'];
-    }*/
 	
 	public function index()
-	{ 
-		$measure = new Measure(); 
-		$measure->value = 10; 
-		$measure->description = 'Co2'; 
-		$measure->save();
-		
-		return MeasureResource::collection(Measure::paginate(3));
+	{
+        //echo('Welcome');
+        return Measure::all();
 
-	}
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -40,26 +33,20 @@ class MeasureController extends Controller
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(MeasurePostRequest $request)
     {
-        //
+        //#POST -- Add Specified request
+        $measure = new Measure($request->all());
+        $measure->save();
+        if ($measure->save()) {
+            return new MeasureResource($measure);
+        }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Measure  $measure
-     * @return \Illuminate\Http\Response
-     */
     public function show(Measure $measure)
     {
-        //
+        //#GET -- Display the specified resource.
+        return $measure;
     }
 
     /**
@@ -82,7 +69,12 @@ class MeasureController extends Controller
      */
     public function update(Request $request, Measure $measure)
     {
-        //
+        echo('test');
+        $measure = Measure::Update($measure->id);
+        $measure->Description = $request->input('Value');
+        $measure->Description = $request->input('Description');
+        $measure->save();
+        return new MeasureResource($measure);
     }
 
     /**
@@ -93,6 +85,8 @@ class MeasureController extends Controller
      */
     public function destroy(Measure $measure)
     {
-        //
+        if($measure->delete()) {
+            return new Measure($measure);
+        }
     }
 }
