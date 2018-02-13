@@ -241,7 +241,7 @@
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-565" />
     <option name="y" value="-13" />
     <option name="width" value="1346" />
@@ -312,15 +312,15 @@
       <updated>1517602562134</updated>
       <workItem from="1517602570030" duration="752000" />
       <workItem from="1517924902172" duration="4779000" />
-      <workItem from="1518199325754" duration="24344000" />
+      <workItem from="1518199325754" duration="24911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29875000" />
+    <option name="totallyTimeSpent" value="30442000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30380672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
