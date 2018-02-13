@@ -14,6 +14,6 @@ class MeasureResource extends Resource
      */
     public function toArray($request)
     {
-        return [ 'Value' => $this->Value, 'Description' => $this->Description, ];
+        return [ 'Value' => $this->value, 'Description' => $this->description, ];
     }
 }

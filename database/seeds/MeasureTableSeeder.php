@@ -12,5 +12,6 @@ class MeasureTableSeeder extends Seeder
     public function run()
     {
         //
+
     }
 }

@@ -24,8 +24,8 @@ class MeasurePostRequest extends FormRequest
     public function rules()
     {
         return [
-            'Value' => 'required|Numeric',
-            'Description' => 'required|String',
+            'value' => 'required|Numeric',
+            'description' => 'required|String',
         ];
     }
 }
