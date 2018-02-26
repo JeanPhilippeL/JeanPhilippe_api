@@ -9,6 +9,7 @@ class Profile extends Model
 
     public function user()
     {
+        //protected $primaryKey = 'user_id';
         return $this->belongsTo('App\User');
     }
 }

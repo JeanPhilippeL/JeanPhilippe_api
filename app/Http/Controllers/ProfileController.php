@@ -61,7 +61,7 @@ class ProfileController extends Controller
                 $user->profile->linkedin_url = $request->linkedin_url;
                 $user->profile->save();
                 return $user->profile;
-            }
+            };
     }
 
     /**
