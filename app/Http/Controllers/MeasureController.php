@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Measure;
+use App\Station;
 use App\Http\Resources\MeasureResource;
 use App\Http\Requests\MeasurePostRequest;
 
@@ -25,9 +26,9 @@ class MeasureController extends Controller
     }
 
     //#GET -- Display the specified resource.
-    public function show(Measure $measure)
+    public function show(Station $station)
     {
-        return new MeasureResource($measure);
+        return $station->measure();
     }
 
     // Update the specified resource in storage.
