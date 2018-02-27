@@ -17,7 +17,7 @@ class ProfileTest extends TestCase
      */
 
 
-    public function testPostProfileTest()
+    public function testPostNotExistProfileTest()
     {
         $response = $this->put('/api/users/2/profile',
 
@@ -27,25 +27,24 @@ class ProfileTest extends TestCase
                 'linkedin_url'=> '30'],
             ['Accept'=> 'application/json']);
 
-        //$response->assertJsonFragment(['web_site_url'=>'30']);
+        $response->assertJsonFragment(['web_site_url'=>'30']);
         $response->assertStatus(200);
 
     }
 
-    /*public function testPostProfileTest()
+    public function testPostExistProfileTest()
     {
-        $response = $this->put('/api/users/2/profile',
+        $response = $this->put('/api/users/1/profile',
 
-            [   'ddn'=> new DateTime('2000-01-02'),
-                'web_site_url'=> '30',
-                'facebook_url'=> '30',
-                'linkedin_url'=> '30'],
+            [   'ddn'=> new DateTime('2000-01-06'),
+                'web_site_url'=> '31',
+                'facebook_url'=> '31',
+                'linkedin_url'=> '31'],
             ['Accept'=> 'application/json']);
 
-        //$response->assertJsonFragment(['web_site_url'=>'30']);
+        $response->assertJsonFragment(['web_site_url'=>'31']);
         $response->assertStatus(200);
-
-    }*/
+    }
 
     public function testPostProfileBadPathTest()
     {
