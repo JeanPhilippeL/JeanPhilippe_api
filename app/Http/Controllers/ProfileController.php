@@ -54,14 +54,22 @@ class ProfileController extends Controller
 
     public function update(Request $request, User $user)
     {
-            if ($user->profile->exists) {
-                $user->profile->ddn = $request->ddn;
-                $user->profile->web_site_url = $request->web_site_url;
-                $user->profile->facebook_url = $request->facebook_url;
-                $user->profile->linkedin_url = $request->linkedin_url;
-                $user->profile->save();
-                return $user->profile;
-            }
+
+        if ($user->profile == null) {
+            $profile = new Profile();
+            $profile->ddn = $request->ddn;
+            $profile->web_site_url = $request->web_site_url;
+            $profile->facebook_url = $request->facebook_url;
+            $profile->linkedin_url = $request->linkedin_url;
+            $profile->user_id = $user->id;
+        }else{
+            $user->profile->ddn = $request->ddn;
+            $user->profile->web_site_url = $request->web_site_url;
+            $user->profile->facebook_url = $request->facebook_url;
+            $user->profile->linkedin_url = $request->linkedin_url;
+            $user->profile->save();
+        }
+        return $user->profile;
     }
 
     /**
