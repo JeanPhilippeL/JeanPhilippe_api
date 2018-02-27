@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMeasuresTable extends Migration
+class CreateStationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateMeasuresTable extends Migration
      */
     public function up()
     {
-        Schema::create('measures', function (Blueprint $table) {
+        Schema::create('stations', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('station_id');
-            $table->foreign('station_id')->references('id')->on('stations');
-			$table->double('value');
-			$table->string('description');
+            $table->string('nom');
+            $table->string('lat');
+            $table->string('long');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateMeasuresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('measures');
+        Schema::dropIfExists('stations');
     }
 }
