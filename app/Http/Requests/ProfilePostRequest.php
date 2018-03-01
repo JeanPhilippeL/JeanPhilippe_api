@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class MeasurePostRequest extends FormRequest
+class ProfilePostRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class MeasurePostRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,8 +24,10 @@ class MeasurePostRequest extends FormRequest
     public function rules()
     {
         return [
-            'value' => 'required|Numeric',
-            'description' => 'required|String',
+            'ddn' => 'required|Date',
+            'web_site_url' => 'String',
+            'facebook_url' => 'String',
+            'linkedin_url' => 'String'
         ];
     }
 }

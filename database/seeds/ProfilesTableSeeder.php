@@ -14,7 +14,7 @@ class ProfilesTableSeeder extends Seeder
     public function run()
     {
         $profile = new Profile();
-        $profile->user_id = $user->id;
+        $profile->user_id = 1;
         $date = new DateTime('2000-01-01');
         $date->format('Y-m-d');
         $profile->ddn = $date;
