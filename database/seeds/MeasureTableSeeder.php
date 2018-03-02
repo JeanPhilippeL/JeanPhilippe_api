@@ -32,5 +32,6 @@ class MeasureTableSeeder extends Seeder
         $measure->description = 'Co4';
         $measure->save();
 
+        
     }
 }
