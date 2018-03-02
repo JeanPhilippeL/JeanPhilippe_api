@@ -17,7 +17,7 @@ class ProfileTest extends TestCase
      */
 
 
-    public function testPostNotExistProfileTest()
+    /*public function testPostNotExistProfileTest()
     {
         $response = $this->put('/api/users/2/profile',
 
@@ -30,7 +30,7 @@ class ProfileTest extends TestCase
         $response->assertJsonFragment(['web_site_url'=>'30']);
         $response->assertStatus(200);
 
-    }
+    }*/
 
     public function testPostExistProfileTest()
     {
