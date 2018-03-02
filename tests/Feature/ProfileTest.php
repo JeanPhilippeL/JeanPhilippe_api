@@ -46,7 +46,6 @@ class ProfileTest extends TestCase
         $response->assertStatus(200);
     }
 
-<<<<<<< HEAD
     public function testPostProfileIntegerWebSiteUrl()
     {
         $response = $this->put('/api/users/2/profile',
@@ -112,19 +111,5 @@ class ProfileTest extends TestCase
     {
         $response = $this->get('/api/users/-1/profile',['Accept'=> 'application/json']);
         $response->assertStatus(404);
-=======
-    public function testPostProfileBadPathTest()
-    {
-        $response = $this->put('/api/users/30/profile',
-            ['ddn'=> new DateTime('2000-01-02'),
-                'web_site_url'=> '30',
-                'facebook_url'=> '30',
-                'linkedin_url'=> '30'],
-            ['Accept'=> 'application/json']);
-
-        //$response->assertJsonFragment(['web_site_url'=>'30']);
-        $response->assertStatus(404);
-
->>>>>>> 9eaf5f265ab6e186cbf959208617f5dfb31b3331
     }
 }
