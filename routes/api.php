@@ -12,6 +12,9 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+
+
 Route::apiResource('measures', 'MeasureController');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
@@ -34,5 +37,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::middleware('auth:api')->get('/user/profile', function (Request $request) {
     return $request->user()->profile;
 });
+
+
+
+
 
 
