@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Station;
 use Illuminate\Http\Request;
+use App\Http\Resources\MeasureResource;
+use App\Http\Requests\MeasurePostRequest;
 use App\Http\Controllers\Controller;
 
 class StationController extends Controller
@@ -15,7 +17,8 @@ class StationController extends Controller
      */
     public function index()
     {
-        //
+        $stations = Station::paginate(5);
+        return StationResource::collection($stations);
     }
 
     /**
@@ -34,9 +37,14 @@ class StationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StationPostRequest $request)
     {
-        //
+        $station = new Station();
+        $station->name = $request->input('name');
+        $station->lat = $request->input('lat');
+        $station->long = $request->input('long');
+        $station->save();
+        return new StationResource($station);
     }
 
     /**
@@ -47,7 +55,7 @@ class StationController extends Controller
      */
     public function show(Station $station)
     {
-        //
+        return new StationResource($station);
     }
 
     /**
@@ -68,9 +76,15 @@ class StationController extends Controller
      * @param  \App\Station  $station
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Station $station)
+    public function update(StationPostRequest $request, Station $station)
     {
-        //
+        $station = Station::findOrFail($station->id);
+        $station->name = $request->input('name');
+        $station->lat = $request->input('lat');
+        $station->long = $request->input('long');
+        $station->save();
+
+        return new StationResource($station);
     }
 
     /**
@@ -81,6 +95,9 @@ class StationController extends Controller
      */
     public function destroy(Station $station)
     {
-        //
+        Station::destroy($station->id);
+        if($station->delete()){
+            return new StationResource($station);
+        }
     }
 }

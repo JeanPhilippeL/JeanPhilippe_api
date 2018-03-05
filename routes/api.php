@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 Route::apiResource('measures', 'MeasureController');
+Route::apiResource('stations', 'StationController');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
