@@ -78,7 +78,6 @@ class StationController extends Controller
      */
     public function update(StationPostRequest $request, Station $station)
     {
-        $station = Station::findOrFail($station->id);
         $station->name = $request->input('name');
         $station->lat = $request->input('lat');
         $station->long = $request->input('long');
