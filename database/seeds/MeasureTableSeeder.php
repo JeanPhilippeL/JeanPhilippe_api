@@ -13,7 +13,7 @@ class MeasureTableSeeder extends Seeder
     public function run()
     {
         $measure = new Measure();
-        $measure->value = 666;
+        $measure->value = 500;
         $measure->description = 'Co1';
         $measure->save();
 
@@ -32,6 +32,6 @@ class MeasureTableSeeder extends Seeder
         $measure->description = 'Co4';
         $measure->save();
 
-        
+
     }
 }
