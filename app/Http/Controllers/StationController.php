@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Station;
 use Illuminate\Http\Request;
-use App\Http\Resources\MeasureResource;
-use App\Http\Requests\MeasurePostRequest;
+use App\Http\Resources\StationResource;
+use App\Http\Requests\StationPostRequest;
 use App\Http\Controllers\Controller;
 
 class StationController extends Controller
