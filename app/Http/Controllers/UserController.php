@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserPostRequest;
+use App\Http\Resources\UserResource;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -27,15 +29,14 @@ class UserController extends Controller
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function store(UserPostRequest $request)
     {
-        //
+        $user = new User;
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+        $user->password = $request->input('password');
+        $user->save();
+        return new UserResource($user);
     }
 
     /**
