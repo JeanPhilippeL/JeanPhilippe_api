@@ -41,6 +41,7 @@ class UserController extends Controller
         return response(['accesstoken' => $token])->setStatusCode(201);
     }
 
+    
     /**
      * Display the specified resource.
      *
