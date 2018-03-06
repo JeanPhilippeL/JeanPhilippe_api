@@ -13,7 +13,6 @@ class StationTest extends TestCase
      *
      * @return void
      */
-
         public function testPostStation()
     {
         $response = $this->post('/api/stations',
@@ -58,4 +57,3 @@ class StationTest extends TestCase
         $response->assertStatus(302);
     }
 
-}
