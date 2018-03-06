@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Station;
 use Illuminate\Http\Request;
 use App\Http\Resources\StationResource;
@@ -99,4 +100,5 @@ class StationController extends Controller
             return new StationResource($station);
         }
     }
+
 }
