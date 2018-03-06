@@ -21,19 +21,20 @@ class UserTest extends TestCase
         $this->assertTrue(true);
     }
 
-    public function testServerCreation()
+    public function testPostUser()
     {
-        Passport::actingAs(
-            \App\User::find(1)
-        );
-        $response = $this->post('/register',
+
+        $response = $this->post('api/register',
             ['name'=> 'Alia',
             'email'=> 'alia@hotmail.com',
             'password'=> '123456'],
             ['Accept'=> 'application/json']);
 
+        /*Passport::actingAs(
+            \App\User::find(1)
+        );*/
         //echo (json_decode($response));
-        $response->assertStatus(200);
+        $response->assertStatus(201)->assertStatus(['accesstoken']);
     }
 
 }

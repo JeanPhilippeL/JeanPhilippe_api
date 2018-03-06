@@ -31,12 +31,14 @@ class UserController extends Controller
 
     public function store(UserPostRequest $request)
     {
+
         $user = new User;
         $user->name = $request->input('name');
         $user->email = $request->input('email');
         $user->password = $request->input('password');
         $user->save();
-        return new UserResource($user);
+        $token = $user->createToken('iot')->accessToken;
+        return response(['accesstoken' => $token])->setStatusCode(201);
     }
 
     /**

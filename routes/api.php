@@ -17,11 +17,13 @@ use Illuminate\Support\Facades\Route;
 //public
 Route::get('stations/{station}', 'StationController@show');
 Route::get('stations', 'StationController@index');
+
 //protégé
 Route::post('stations', 'StationController@store')->middleware(['auth:api']);
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
 //Protégé avec vérification du propriétaire (owner)
 Route::delete('stations/{stations}', 'StationController@destroy')
     ->middleware(['auth:api', 'owner:stations']);
@@ -38,6 +40,7 @@ Route::post('/register', 'UserController@store');
 
 Route::get('users/{user}/profile', 'ProfileController@show');
 Route::put('users/{user}/profile', 'ProfileController@update');
+
 Route::get('/create-personal-token', function () {
     $rnd = random_int(0, 1000);
     $user = new App\User();
