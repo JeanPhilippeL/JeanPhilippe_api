@@ -17,11 +17,6 @@ class UserTest extends TestCase
      * @return void
      */
 
-    public function testExample()
-    {
-        $this->assertTrue(true);
-    }
-
     public function testPostUserStatus()
     {
 
