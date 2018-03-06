@@ -13,11 +13,11 @@ class StationTest extends TestCase
      *
      * @return void
      */
-        public function testPostStation()
+    public function testPostStation()
     {
         $response = $this->post('/api/stations',
-            ['name'=> 'Test-A', 'lat'=>'180', 'long'=>'135'],
-            ['Accept'=> 'application/json']);
+            ['name' => 'Test-A', 'lat' => '180', 'long' => '135'],
+            ['Accept' => 'application/json']);
 
         $response->assertStatus(201);
     }
@@ -25,8 +25,8 @@ class StationTest extends TestCase
     public function testPostStationWithoutName()
     {
         $response = $this->post('/api/stations',
-            ['lat'=>'180', 'long'=>'135'],
-            ['Accept'=> 'application/json']);
+            ['lat' => '180', 'long' => '135'],
+            ['Accept' => 'application/json']);
 
         $response->assertStatus(422);
     }
@@ -34,8 +34,8 @@ class StationTest extends TestCase
     public function testPostStationWithoutLat()
     {
         $response = $this->post('/api/stations',
-            ['name'=> 'Test-A', 'long'=>'135'],
-            ['Accept'=> 'application/json']);
+            ['name' => 'Test-A', 'long' => '135'],
+            ['Accept' => 'application/json']);
 
         $response->assertStatus(422);
     }
@@ -43,17 +43,18 @@ class StationTest extends TestCase
     public function testPostStationWithoutLong()
     {
         $response = $this->post('/api/stations',
-            ['name'=> 'Test-A', 'lat'=>'180', ],
-            ['Accept'=> 'application/json']);
+            ['name' => 'Test-A', 'lat' => '180',],
+            ['Accept' => 'application/json']);
 
         $response->assertStatus(422);
     }
 
-   public function testDeleteStation()
+    public function testDeleteStation()
     {
         $response = $this->put('/api/stations/1');
-            ['Accept'=> 'application/json'];
+        ['Accept' => 'application/json'];
 
         $response->assertStatus(302);
     }
 
+}
