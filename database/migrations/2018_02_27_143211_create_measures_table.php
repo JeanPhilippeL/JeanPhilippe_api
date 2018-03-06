@@ -15,6 +15,8 @@ class CreateMeasuresTable extends Migration
     {
         Schema::create('measures', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('station_id')->unsigned();
+            $table->foreign('station_id')->references('id')->on('stations');
 			$table->double('value');
 			$table->string('description');
             $table->timestamps();

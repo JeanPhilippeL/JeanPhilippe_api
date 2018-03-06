@@ -16,5 +16,11 @@ class StationsTableSeeder extends Seeder
         $station->lat = "180";
         $station->long = "120";
         $station->save();
+
+        $station = new Station();
+        $station->name = "Station B";
+        $station->lat = "180";
+        $station->long = "120";
+        $station->save();
     }
 }
