@@ -28,7 +28,7 @@ class MeasureController extends Controller
     //#GET -- Display the specified resource.
     public function show(Station $station)
     {
-        return $station->measure();
+        $station->measure();
     }
 
     // Update the specified resource in storage.
