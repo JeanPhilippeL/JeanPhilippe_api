@@ -114,7 +114,7 @@ class UserTest extends TestCase
         $response->assertStatus(422);
     }
 
-    public function testPostUserNoPasword()
+    public function testPostUserNoPassword()
     {
 
         $response = $this->post('api/register',
