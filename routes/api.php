@@ -31,6 +31,7 @@ Route::put('stations/{stations}', 'StationController@update')
     ->middleware(['auth:api', 'owner:stations']);
 
 Route::apiResource('measures', 'MeasureController');
+Route::apiResource('stations', 'StationController');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

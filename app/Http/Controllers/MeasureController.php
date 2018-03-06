@@ -33,7 +33,7 @@ class MeasureController extends Controller
     // Update the specified resource in storage.
     public function update(MeasurePostRequest $request, Measure $measure)
     {
-        if($measure != null){
+        if($measure->exists){
             $measure->value = $request->input('value');
             $measure->description = $request->input('description');
             $measure->save();

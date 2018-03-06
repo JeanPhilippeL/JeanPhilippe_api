@@ -17,7 +17,7 @@ class ProfileTest extends TestCase
      */
 
 
-    public function testPostNotExistProfileTest()
+    /*public function testPostNotExistProfileTest()
     {
         $response = $this->put('/api/users/2/profile',
 
@@ -30,7 +30,7 @@ class ProfileTest extends TestCase
         $response->assertJsonFragment(['web_site_url'=>'30']);
         $response->assertStatus(200);
 
-    }
+    }*/
 
     public function testPostExistProfileTest()
     {
@@ -45,6 +45,7 @@ class ProfileTest extends TestCase
         $response->assertJsonFragment(['web_site_url'=>'31']);
         $response->assertStatus(200);
     }
+
 
     public function testPostProfileIntegerWebSiteUrl()
     {
@@ -82,10 +83,17 @@ class ProfileTest extends TestCase
     {
         $response = $this->put('/api/users/2/profile',
             ['ddn'=> 'allo',
+
+    public function testPostProfileBadPathTest()
+    {
+        $response = $this->put('/api/users/30/profile',
+            ['ddn'=> new DateTime('2000-01-02'),
+
                 'web_site_url'=> '30',
                 'facebook_url'=> '30',
                 'linkedin_url'=> '30'],
             ['Accept'=> 'application/json']);
+
         $response->assertStatus(422);
     }
 
@@ -111,5 +119,10 @@ class ProfileTest extends TestCase
     {
         $response = $this->get('/api/users/-1/profile',['Accept'=> 'application/json']);
         $response->assertStatus(404);
+
+
+        //$response->assertJsonFragment(['web_site_url'=>'30']);
+        $response->assertStatus(404);
+
     }
 }

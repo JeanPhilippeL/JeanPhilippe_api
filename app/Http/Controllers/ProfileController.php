@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Profile;
 use Illuminate\Http\Request;
-use App\Http\Requests\ProfilePostRequest;
 
 class ProfileController extends Controller
 {
@@ -53,7 +52,7 @@ class ProfileController extends Controller
         //
     }
 
-    public function update(ProfilePostRequest $request, User $user)
+    public function update(Request $request, User $user)
     {
 
         if ($user->profile == null) {
@@ -64,7 +63,10 @@ class ProfileController extends Controller
             $profile->facebook_url = $request->facebook_url;
             $profile->linkedin_url = $request->linkedin_url;
             $profile->user_id = $user->id;
+
             $user->profile = $profile;
+
+
         }else{
             echo('--exist--');
             $user->profile->ddn = $request->ddn;
