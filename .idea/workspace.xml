@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1c7942-ff54-4fa4-bf12-b12737ac6454" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/Station.php" afterPath="$PROJECT_DIR$/app/Station.php" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/MeasureTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/MeasureTableSeeder.php" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir/" />
@@ -122,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/app/Station.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -402,12 +401,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520349215417</updated>
-      <workItem from="1520349216519" duration="874000" />
+      <workItem from="1520349216519" duration="982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="874000" />
+    <option name="totallyTimeSpent" value="982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -522,7 +521,7 @@
     <entry file="file://$PROJECT_DIR$/app/Station.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding />
         </state>
       </provider>

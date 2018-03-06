@@ -9,7 +9,7 @@ class Station extends Model
 
     public function measure()
     {
-        return $this->hasOne('App\Measure');
+        return $this->hasMany('App\Measure');
     }
 
     protected $fillable = ['name', 'lat', 'long'];
