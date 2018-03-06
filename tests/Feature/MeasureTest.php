@@ -11,7 +11,11 @@ class MeasureTest extends TestCase
 
     public function testGetMeasureTest()
     {
-        $response = $this->get('/api/stations/1/measure');
+        $response = $this->get('/api/stations/1/measure',
+        ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json']);
+
+        $response->assertJsonFragment(['value' => 400]);
         $response->assertStatus(200);
     }
 
