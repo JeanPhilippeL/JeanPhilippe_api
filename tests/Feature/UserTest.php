@@ -32,7 +32,7 @@ class UserTest extends TestCase
             'password'=> '123456'],
             ['Accept'=> 'application/json']);
 
-        echo (json_decode($response));
+        //echo (json_decode($response));
         $response->assertStatus(200);
     }
 
