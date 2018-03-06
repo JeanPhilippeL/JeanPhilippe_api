@@ -2,479 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="552e818c-3e6c-4e72-b802-0ba68634ec71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/api.iml" afterPath="$PROJECT_DIR$/.idea/api.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MeasureController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MeasureController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StationController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/StationController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AbortIfNotOwnerMiddleware.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/AbortIfNotOwnerMiddleware.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProfilePostRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/ProfilePostRequest.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserPostRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/UserPostRequest.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" afterPath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" afterPath="$PROJECT_DIR$/config/auth.php" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/MeasureTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/MeasureTableSeeder.php" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
-      <change beforePath="$PROJECT_DIR$/storage/oauth-private.key" afterPath="$PROJECT_DIR$/storage/oauth-private.key" />
-      <change beforePath="$PROJECT_DIR$/storage/oauth-public.key" afterPath="$PROJECT_DIR$/storage/oauth-public.key" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ProfileTest.php" afterPath="$PROJECT_DIR$/tests/Feature/ProfileTest.php" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/UserTest.php" afterPath="$PROJECT_DIR$/tests/Feature/UserTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/bin/generate-defuse-key" afterPath="$PROJECT_DIR$/vendor/bin/generate-defuse-key" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/.gitignore" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/.php_cs" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/.php_cs" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/LICENSE" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/README.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/bin/generate-defuse-key" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/bin/generate-defuse-key" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/composer.json" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/dist/Makefile" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/dist/Makefile" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/dist/box.json" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/dist/box.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/dist/signingkey.asc" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/dist/signingkey.asc" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/CryptoDetails.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/CryptoDetails.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/FAQ.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/FAQ.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/InstallingAndVerifying.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/InstallingAndVerifying.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/InternalDeveloperDocs.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/InternalDeveloperDocs.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/Tutorial.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/Tutorial.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/UpgradingFromV1.2.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/UpgradingFromV1.2.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/classes/Crypto.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/classes/Crypto.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/classes/File.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/classes/File.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/classes/Key.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/classes/Key.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/classes/KeyProtectedByPassword.md" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/docs/classes/KeyProtectedByPassword.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/psalm.xml" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/psalm.xml" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Core.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Core.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Crypto.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Crypto.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/DerivedKeys.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/DerivedKeys.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Encoding.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Encoding.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/BadFormatException.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/BadFormatException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/CryptoException.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/CryptoException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/EnvironmentIsBrokenException.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/EnvironmentIsBrokenException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/IOException.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/IOException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/WrongKeyOrModifiedCiphertextException.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Exception/WrongKeyOrModifiedCiphertextException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/File.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/File.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Key.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/Key.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/KeyOrPassword.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/KeyOrPassword.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/KeyProtectedByPassword.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/KeyProtectedByPassword.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/RuntimeTests.php" afterPath="$PROJECT_DIR$/vendor/defuse/php-encryption/src/RuntimeTests.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/firebase/php-jwt/LICENSE" afterPath="$PROJECT_DIR$/vendor/firebase/php-jwt/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/firebase/php-jwt/README.md" afterPath="$PROJECT_DIR$/vendor/firebase/php-jwt/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/firebase/php-jwt/composer.json" afterPath="$PROJECT_DIR$/vendor/firebase/php-jwt/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/BeforeValidException.php" afterPath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/BeforeValidException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/ExpiredException.php" afterPath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/ExpiredException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/JWT.php" afterPath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/JWT.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/SignatureInvalidException.php" afterPath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/SignatureInvalidException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/LICENSE" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/README.md" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/UPGRADING.md" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/UPGRADING.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/composer.json" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/ClientInterface.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/ClientInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SetCookie.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SetCookie.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ConnectException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ConnectException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/SeekException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/SeekException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactoryInterface.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/EasyHandle.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/EasyHandle.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/HandlerStack.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/HandlerStack.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Middleware.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Middleware.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RequestOptions.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RequestOptions.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/TransferStats.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/TransferStats.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/UriTemplate.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/UriTemplate.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions_include.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions_include.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/LICENSE" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/Makefile" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/Makefile" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/README.md" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/composer.json" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/AggregateException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/AggregateException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/CancellationException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/CancellationException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/Coroutine.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/Coroutine.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/EachPromise.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/EachPromise.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/FulfilledPromise.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/FulfilledPromise.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/Promise.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/Promise.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/PromiseInterface.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/PromiseInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/PromisorInterface.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/PromisorInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/RejectedPromise.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/RejectedPromise.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/RejectionException.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/RejectionException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/TaskQueue.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/TaskQueue.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/TaskQueueInterface.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/TaskQueueInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/functions.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/functions.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/functions_include.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/functions_include.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/LICENSE" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/README.md" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/composer.json" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/AppendStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/AppendStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/BufferStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/BufferStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/CachingStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/CachingStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/DroppingStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/DroppingStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/FnStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/FnStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/InflateStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/InflateStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LazyOpenStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LazyOpenStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LimitStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LimitStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MessageTrait.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MessageTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MultipartStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MultipartStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/NoSeekStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/NoSeekStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/PumpStream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/PumpStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Request.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Request.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Response.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Response.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/ServerRequest.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/ServerRequest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Stream.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Stream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/StreamDecoratorTrait.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/StreamDecoratorTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/StreamWrapper.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/StreamWrapper.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UploadedFile.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UploadedFile.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Uri.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Uri.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UriNormalizer.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UriNormalizer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UriResolver.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UriResolver.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions_include.php" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions_include.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/LICENSE.txt" afterPath="$PROJECT_DIR$/vendor/laravel/passport/LICENSE.txt" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/passport/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000001_create_oauth_auth_codes_table.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000001_create_oauth_auth_codes_table.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000002_create_oauth_access_tokens_table.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000002_create_oauth_access_tokens_table.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000003_create_oauth_refresh_tokens_table.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000003_create_oauth_refresh_tokens_table.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000004_create_oauth_clients_table.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000004_create_oauth_clients_table.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000005_create_oauth_personal_access_clients_table.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/database/migrations/2016_06_01_000005_create_oauth_personal_access_clients_table.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/readme.md" afterPath="$PROJECT_DIR$/vendor/laravel/passport/readme.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/resources/assets/js/components/AuthorizedClients.vue" afterPath="$PROJECT_DIR$/vendor/laravel/passport/resources/assets/js/components/AuthorizedClients.vue" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/resources/assets/js/components/Clients.vue" afterPath="$PROJECT_DIR$/vendor/laravel/passport/resources/assets/js/components/Clients.vue" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/resources/assets/js/components/PersonalAccessTokens.vue" afterPath="$PROJECT_DIR$/vendor/laravel/passport/resources/assets/js/components/PersonalAccessTokens.vue" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/resources/views/authorize.blade.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/resources/views/authorize.blade.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/ApiTokenCookieFactory.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/ApiTokenCookieFactory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/AuthCode.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/AuthCode.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/AccessToken.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/AccessToken.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/AccessTokenRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/AccessTokenRepository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/AuthCode.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/AuthCode.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/AuthCodeRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/AuthCodeRepository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/Client.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/Client.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/ClientRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/ClientRepository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/FormatsScopesForStorage.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/FormatsScopesForStorage.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/PersonalAccessGrant.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/PersonalAccessGrant.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/RefreshToken.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/RefreshToken.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/RefreshTokenRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/RefreshTokenRepository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/Scope.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/Scope.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/ScopeRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/ScopeRepository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/User.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/User.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/UserRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Bridge/UserRepository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Client.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Client.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/ClientRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/ClientRepository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Console/ClientCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Console/ClientCommand.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Console/InstallCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Console/InstallCommand.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Console/KeysCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Console/KeysCommand.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Events/AccessTokenCreated.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Events/AccessTokenCreated.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Events/RefreshTokenCreated.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Events/RefreshTokenCreated.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Exceptions/MissingScopeException.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Exceptions/MissingScopeException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Guards/TokenGuard.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Guards/TokenGuard.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/HasApiTokens.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/HasApiTokens.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/AccessTokenController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/AccessTokenController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/ApproveAuthorizationController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/ApproveAuthorizationController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/AuthorizationController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/AuthorizationController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/AuthorizedAccessTokenController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/AuthorizedAccessTokenController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/ClientController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/ClientController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/ConvertsPsrResponses.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/ConvertsPsrResponses.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/DenyAuthorizationController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/DenyAuthorizationController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/HandlesOAuthErrors.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/HandlesOAuthErrors.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/PersonalAccessTokenController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/PersonalAccessTokenController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/RetrievesAuthRequestFromSession.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/RetrievesAuthRequestFromSession.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/ScopeController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/ScopeController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/TransientTokenController.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Controllers/TransientTokenController.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Middleware/CheckClientCredentials.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Middleware/CheckClientCredentials.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Middleware/CheckForAnyScope.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Middleware/CheckForAnyScope.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Middleware/CheckScopes.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Middleware/CheckScopes.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Middleware/CreateFreshApiToken.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Middleware/CreateFreshApiToken.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Passport.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Passport.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/PassportServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/PassportServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/PersonalAccessClient.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/PersonalAccessClient.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/PersonalAccessTokenFactory.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/PersonalAccessTokenFactory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/PersonalAccessTokenResult.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/PersonalAccessTokenResult.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/RouteRegistrar.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/RouteRegistrar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Scope.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Scope.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Token.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Token.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/TokenRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/TokenRepository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/TransientToken.php" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/TransientToken.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/.gitignore" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/.scrutinizer.yml" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/.scrutinizer.yml" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/.travis.yml" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/.travis.yml" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/LICENSE" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/README.md" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/composer.json" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/composer.lock" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/phpunit.xml.dist" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Builder.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Builder.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Basic.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Basic.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/EqualsTo.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/EqualsTo.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Factory.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Factory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/GreaterOrEqualsTo.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/GreaterOrEqualsTo.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/LesserOrEqualsTo.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/LesserOrEqualsTo.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Validatable.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Validatable.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parser.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parser.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parsing/Decoder.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parsing/Decoder.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parsing/Encoder.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parsing/Encoder.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signature.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signature.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/BaseSigner.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/BaseSigner.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/KeyParser.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/KeyParser.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha256.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha256.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha384.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha384.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha512.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha512.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha256.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha256.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha384.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha384.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha512.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha512.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Key.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Key.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Keychain.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Keychain.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha256.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha256.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha384.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha384.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha512.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha512.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Token.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Token.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/ValidationData.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/ValidationData.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/EcdsaTokenTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/EcdsaTokenTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/HmacTokenTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/HmacTokenTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/Keys.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/Keys.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/RsaTokenTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/RsaTokenTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/UnsignedTokenTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/UnsignedTokenTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/private.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/private.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/private2.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/private2.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public1.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public1.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public2.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public2.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public3.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public3.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/encrypted-private.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/encrypted-private.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/encrypted-public.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/encrypted-public.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/private.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/private.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/public.key" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/public.key" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/BuilderTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/BuilderTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/BasicTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/BasicTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/EqualsToTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/EqualsToTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/FactoryTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/FactoryTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/GreaterOrEqualsToTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/GreaterOrEqualsToTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/LesserOrEqualsToTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/LesserOrEqualsToTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/ParserTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/ParserTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Parsing/DecoderTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Parsing/DecoderTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Parsing/EncoderTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Parsing/EncoderTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/SignatureTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/SignatureTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/BaseSignerTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/BaseSignerTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/KeyParserTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/KeyParserTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha256Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha256Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha384Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha384Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha512Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha512Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/EcdsaTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/EcdsaTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha256Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha256Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha384Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha384Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha512Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha512Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/HmacTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/HmacTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/KeyTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/KeyTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/KeychainTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/KeychainTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha256Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha256Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha384Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha384Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha512Test.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha512Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/TokenTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/TokenTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/ValidationDataTest.php" afterPath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/ValidationDataTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/LICENCE" afterPath="$PROJECT_DIR$/vendor/league/event/LICENCE" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/composer.json" afterPath="$PROJECT_DIR$/vendor/league/event/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/AbstractEvent.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/AbstractEvent.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/AbstractListener.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/AbstractListener.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/CallbackListener.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/CallbackListener.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/Emitter.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/Emitter.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/EmitterAwareInterface.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/EmitterAwareInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/EmitterAwareTrait.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/EmitterAwareTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/EmitterInterface.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/EmitterInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/EmitterTrait.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/EmitterTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/Event.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/Event.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/EventInterface.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/EventInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/Generator.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/Generator.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/GeneratorInterface.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/GeneratorInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/GeneratorTrait.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/GeneratorTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/ListenerAcceptor.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/ListenerAcceptor.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/ListenerAcceptorInterface.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/ListenerAcceptorInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/ListenerInterface.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/ListenerInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/ListenerProviderInterface.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/ListenerProviderInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/event/src/OneTimeListener.php" afterPath="$PROJECT_DIR$/vendor/league/event/src/OneTimeListener.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/.styleci.yml" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/.styleci.yml" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/CONDUCT.md" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/CONDUCT.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/LICENSE" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/composer.json" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/AuthorizationServer.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/AuthorizationServer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/AuthorizationValidators/AuthorizationValidatorInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/AuthorizationValidators/AuthorizationValidatorInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/AuthorizationValidators/BearerTokenValidator.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/AuthorizationValidators/BearerTokenValidator.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/CryptKey.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/CryptKey.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/CryptTrait.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/CryptTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/AccessTokenEntityInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/AccessTokenEntityInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/AuthCodeEntityInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/AuthCodeEntityInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/ClientEntityInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/ClientEntityInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/RefreshTokenEntityInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/RefreshTokenEntityInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/ScopeEntityInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/ScopeEntityInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/TokenInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/TokenInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/AccessTokenTrait.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/AccessTokenTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/AuthCodeTrait.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/AuthCodeTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/ClientTrait.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/ClientTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/EntityTrait.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/EntityTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/RefreshTokenTrait.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/RefreshTokenTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/TokenEntityTrait.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/Traits/TokenEntityTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/UserEntityInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Entities/UserEntityInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/OAuthServerException.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/OAuthServerException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/UniqueTokenIdentifierConstraintViolationException.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Exception/UniqueTokenIdentifierConstraintViolationException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/AbstractAuthorizeGrant.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/AbstractAuthorizeGrant.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/AbstractGrant.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/AbstractGrant.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/AuthCodeGrant.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/AuthCodeGrant.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/ClientCredentialsGrant.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/ClientCredentialsGrant.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/GrantTypeInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/GrantTypeInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/ImplicitGrant.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/ImplicitGrant.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/PasswordGrant.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/PasswordGrant.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/RefreshTokenGrant.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Grant/RefreshTokenGrant.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Middleware/AuthorizationServerMiddleware.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Middleware/AuthorizationServerMiddleware.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Middleware/ResourceServerMiddleware.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Middleware/ResourceServerMiddleware.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/AccessTokenRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/AccessTokenRepositoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/AuthCodeRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/AuthCodeRepositoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/ClientRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/ClientRepositoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/RefreshTokenRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/RefreshTokenRepositoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/RepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/RepositoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/ScopeRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/ScopeRepositoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/UserRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/Repositories/UserRepositoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/RequestEvent.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/RequestEvent.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/RequestTypes/AuthorizationRequest.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/RequestTypes/AuthorizationRequest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResourceServer.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResourceServer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResponseTypes/AbstractResponseType.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResponseTypes/AbstractResponseType.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResponseTypes/BearerTokenResponse.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResponseTypes/BearerTokenResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResponseTypes/RedirectResponse.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResponseTypes/RedirectResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResponseTypes/ResponseTypeInterface.php" afterPath="$PROJECT_DIR$/vendor/league/oauth2-server/src/ResponseTypes/ResponseTypeInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/AUTHORS" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/AUTHORS" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/LICENSE" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/README.md" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/composer.json" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/AES.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/AES.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Base.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Base.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/DES.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/DES.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Hash.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Hash.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/RC2.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/RC2.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/RC4.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/RC4.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Random.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Random.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Rijndael.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Rijndael.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/TripleDES.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/TripleDES.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Twofish.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Crypt/Twofish.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/File/ANSI.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/File/ANSI.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/File/ASN1.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/File/ASN1.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/File/ASN1/Element.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/File/ASN1/Element.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/File/X509.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/File/X509.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Math/BigInteger.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Math/BigInteger.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SCP.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SCP.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SFTP.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SFTP.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SFTP/Stream.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SFTP/Stream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SSH1.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SSH1.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SSH2.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/Net/SSH2.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/System/SSH/Agent/Identity.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/System/SSH/Agent/Identity.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/bootstrap.php" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/bootstrap.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/openssl.cnf" afterPath="$PROJECT_DIR$/vendor/phpseclib/phpseclib/phpseclib/openssl.cnf" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/psr/http-message/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/LICENSE" afterPath="$PROJECT_DIR$/vendor/psr/http-message/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/README.md" afterPath="$PROJECT_DIR$/vendor/psr/http-message/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/composer.json" afterPath="$PROJECT_DIR$/vendor/psr/http-message/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/src/MessageInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/MessageInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/src/RequestInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/RequestInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/src/ResponseInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ResponseInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/src/ServerRequestInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ServerRequestInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/src/StreamInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/StreamInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/src/UploadedFileInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UploadedFileInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/http-message/src/UriInterface.php" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UriInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/.gitignore" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/.travis.yml" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/.travis.yml" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/CHANGELOG" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/CHANGELOG" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Factory/DiactorosFactory.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Factory/DiactorosFactory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Factory/HttpFoundationFactory.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Factory/HttpFoundationFactory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/HttpFoundationFactoryInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/HttpFoundationFactoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/HttpMessageFactoryInterface.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/HttpMessageFactoryInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/README.md" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Factory/DiactorosFactoryTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Factory/DiactorosFactoryTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Factory/HttpFoundationFactoryTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Factory/HttpFoundationFactoryTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/Message.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/Message.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/Response.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/Response.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/ServerRequest.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/ServerRequest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/Stream.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/Stream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/UploadedFile.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/UploadedFile.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/Uri.php" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/Tests/Fixtures/Uri.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/phpunit.xml.dist" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/.coveralls.yml" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/.coveralls.yml" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/CONDUCT.md" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/CONDUCT.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/CONTRIBUTING.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/LICENSE.md" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/LICENSE.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/README.md" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/composer.json" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/composer.lock" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/mkdocs.yml" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/mkdocs.yml" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/AbstractSerializer.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/AbstractSerializer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/CallbackStream.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/CallbackStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Exception/DeprecatedMethodException.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Exception/DeprecatedMethodException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Exception/ExceptionInterface.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Exception/ExceptionInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/HeaderSecurity.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/HeaderSecurity.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/MessageTrait.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/MessageTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/PhpInputStream.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/PhpInputStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/RelativeStream.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/RelativeStream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Request.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Request.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Request/ArraySerializer.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Request/ArraySerializer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Request/Serializer.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Request/Serializer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/RequestTrait.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/RequestTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/ArraySerializer.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/ArraySerializer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/EmitterInterface.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/EmitterInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/EmptyResponse.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/EmptyResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/HtmlResponse.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/HtmlResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/InjectContentTypeTrait.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/InjectContentTypeTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/JsonResponse.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/JsonResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/RedirectResponse.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/RedirectResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/SapiEmitter.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/SapiEmitter.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/SapiEmitterTrait.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/SapiEmitterTrait.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/SapiStreamEmitter.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/SapiStreamEmitter.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/Serializer.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/Serializer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/TextResponse.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/TextResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/XmlResponse.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Response/XmlResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Server.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Server.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/ServerRequest.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/ServerRequest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/ServerRequestFactory.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/ServerRequestFactory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Stream.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Stream.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/UploadedFile.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/UploadedFile.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Uri.php" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-diactoros/src/Uri.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -488,33 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <file leaf-file-name="2018_02_01_143211_create_measures_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_01_143211_create_measures_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/UserTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#33#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -530,22 +42,90 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018_02_01_143211_create_measures_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_01_143211_create_measures_table.php">
+      <file leaf-file-name="2018_03_06_163031_create_stations_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_06_163031_create_stations_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="187">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding>
+                <element signature="e#6#44#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StationsTableSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/StationsTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#37#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014_10_12_100000_create_password_resets_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <file leaf-file-name="ProfilesTableSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/ProfilesTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Container.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Container.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8313">
+              <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Container.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12613">
+              <caret line="742" column="30" lean-forward="true" selection-start-line="742" selection-start-column="30" selection-end-line="742" selection-end-column="30" />
+              <folding>
+                <element signature="e#40#52#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StationTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/StationTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="e#31#50#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -578,7 +158,6 @@
         <option value="$PROJECT_DIR$/app/Measure.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/database/seeds/MeasureTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/tests/Feature/MeasureTest.php" />
         <option value="$PROJECT_DIR$/app/Profile.php" />
         <option value="$PROJECT_DIR$/database/seeds/ProfilesTableSeeder.php" />
@@ -596,13 +175,23 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/StationController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/UserPostRequest.php" />
         <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/Feature/UserTest.php" />
+        <option value="$PROJECT_DIR$/app/Station.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/StationController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/StationResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/StationPostRequest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_03_06_163031_create_stations_table.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/StationTest.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/StationTableSeeder.php" />
+        <option value="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+        <option value="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+        <option value="$PROJECT_DIR$/database/seeds/StationsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
       </list>
     </option>
   </component>
@@ -736,6 +325,11 @@
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -755,7 +349,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="log&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/storage/logs/laravel.log&#10;ClientRepository&#9;null&#9;null&#10;lo&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/storage/logs/laravel.log&#10;api.php&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/routes/api.php&#10;route/&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/routes&#10;api.&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/routes/api.php&#10;auth.php&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/config/auth.php&#10;AuthServiceProvider&#9;null&#9;null&#10;users&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/database/seeds/UsersTableSeeder.php&#10;Connection.php&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/vendor/laravel/framework/src/Illuminate/Database/Connection.php&#10;.log&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/storage/logs/laravel.log&#10;date_c&#9;FILE&#9;jar://C:/Program Files/JetBrains/PhpStorm 2017.3.3/plugins/php/lib/php.jar!/stubs/date/date_c.php&#10;datet&#9;null&#9;null&#10;laravel&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/storage/logs/laravel.log" />
+    <property name="SearchEverywhereHistoryKey" value="contain&#9;null&#9;null&#10;container&#9;null&#9;null&#10;log&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/storage/logs/laravel.log&#10;ClientRepository&#9;null&#9;null&#10;lo&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/storage/logs/laravel.log&#10;api.php&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/routes/api.php&#10;route/&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/routes&#10;api.&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/routes/api.php&#10;auth.php&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/config/auth.php&#10;AuthServiceProvider&#9;null&#9;null&#10;users&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/database/seeds/UsersTableSeeder.php&#10;Connection.php&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/vendor/laravel/framework/src/Illuminate/Database/Connection.php&#10;.log&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/storage/logs/laravel.log&#10;date_c&#9;FILE&#9;jar://C:/Program Files/JetBrains/PhpStorm 2017.3.3/plugins/php/lib/php.jar!/stubs/date/date_c.php&#10;datet&#9;null&#9;null&#10;laravel&#9;FILE&#9;file://C:/Users/JeanPhilippe/www/api/storage/logs/laravel.log" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -796,22 +390,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72596000" />
+    <option name="totallyTimeSpent" value="75103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2693997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1473851" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08399366" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20424597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17749603" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -827,7 +422,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34626648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -843,111 +437,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="319" column="20" lean-forward="false" selection-start-line="319" selection-start-column="20" selection-end-line="319" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/ExampleTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="478" column="12" lean-forward="false" selection-start-line="478" selection-start-column="12" selection-end-line="478" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_01_143211_create_measures_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_201331_create_profiles_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="437" column="20" lean-forward="false" selection-start-line="437" selection-start-column="20" selection-end-line="437" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -987,14 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/channels.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1078,15 +564,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
+        <state relative-caret-position="17">
           <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,24 +623,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProfilesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1203,11 +669,171 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/UserTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="120" column="32" lean-forward="false" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
           <folding>
-            <element signature="e#33#68#0#PHP" expanded="true" />
+            <element signature="e#33#68#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/StationResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Station.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/StationPostRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_01_143211_create_measures_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_201331_create_profiles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/StationTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="e#31#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8313">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12613">
+          <caret line="742" column="30" lean-forward="true" selection-start-line="742" selection-start-column="30" selection-end-line="742" selection-end-column="30" />
+          <folding>
+            <element signature="e#40#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ProfilesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_static.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="3294" column="42" lean-forward="false" selection-start-line="3294" selection-start-column="42" selection-end-line="3294" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="2909" column="146" lean-forward="false" selection-start-line="2909" selection-start-column="146" selection-end-line="2909" selection-end-column="146" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/StationTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_06_163031_create_stations_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/StationsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#37#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
