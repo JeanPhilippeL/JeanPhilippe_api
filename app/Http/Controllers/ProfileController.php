@@ -63,10 +63,6 @@ class ProfileController extends Controller
             $profile->facebook_url = $request->facebook_url;
             $profile->linkedin_url = $request->linkedin_url;
             $profile->user_id = $user->id;
-
-            $user->profile = $profile;
-
-
         }else{
             echo('--exist--');
             $user->profile->ddn = $request->ddn;

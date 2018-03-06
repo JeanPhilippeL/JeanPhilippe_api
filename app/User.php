@@ -3,13 +3,11 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
-use Laravel\Passport\HasApiTokens;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
 
 class User extends Authenticatable
 {
-    use Notifiable, HasApiTokens;
+    use Notifiable;
 
     public function profile()
     {
