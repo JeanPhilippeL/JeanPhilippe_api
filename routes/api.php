@@ -14,61 +14,48 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::apiResource('measures', 'MeasureController');
-Route::apiResource('stations', 'StationController');
+
+/*
+Public
+Route::get('stations/{station}', 'StationController@show');
+Route::get('stations', 'StationController@index');
+
+
+Protégé
+Route::post('stations', 'StationController@store')->middleware(['auth:api']);
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-Route::get('users/{user}/profile', 'ProfileController@show');
-Route::put('users/{user}/profile', 'ProfileController@update');
-Route::get('stations/{station}/measure', 'MeasureController@show');
-Route::put('stations/{station}/measure', 'MeasureController@update');
-
-//public
-//Route::get('stations/{station}', 'StationController@show');
-//Route::get('stations', 'StationController@index');
-
-//protégé
-//Route::post('stations', 'StationController@store')->middleware(['auth:api']);
-/*Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});*/
-
-//Protégé avec vérification du propriétaire (owner)
-/*Route::delete('stations/{stations}', 'StationController@destroy')
-    ->middleware(['auth:api', 'owner:stations']);*/
-/*Route::put('stations/{stations}', 'StationController@update')
-    ->middleware(['auth:api', 'owner:stations']);*/
-
-//Route::apiResource('measures', 'MeasureController');
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-Route::middleware('auth:api')->get('/user/profile', function (Request $request) {
-    return $request->user()->profile;
+ return $request->user();
 });
 
 
+Protégé avec vérification du propriétaire (owner)
+Route::delete('stations/{stations}', 'StationController@destroy')
+->middleware(['auth:api', 'owner:stations']);
+Route::put('stations/{stations}', 'StationController@update')
+->middleware(['auth:api', 'owner:stations']);
+ */
+
+//récit 1
 Route::post('/register', 'UserController@store');
 
-//Route::get('users/{user}/profile', 'ProfileController@show');
-//Route::put('users/{user}/profile', 'ProfileController@update');
+//récit 2
+Route::get('stations/{stations}', 'StationController@show');
+Route::get('stations/', 'StationController@show');
+Route::post('stations', 'StationController@store')->middleware(['auth:api']);
 
-Route::get('/create-personal-token', function () {
-    $rnd = random_int(0, 1000);
-    $user = new App\User();
-    $user->name = $rnd.'oauth';
-    $user->password = Hash::make('secret');
-    $user->email = $rnd.'oauth@mail.com';
-    $user->save();
-    $token = $user->createToken('iot')->accessToken;
-    echo $token;
-});
+Route::put('stations/{stations}', 'StationController@update')
+    ->middleware(['auth:api', 'owner:stations']);
+Route::delete('stations/{stations}', 'StationController@destroy')
+    ->middleware(['auth:api', 'owner:stations']);
 
+//récit 3
+Route::put('stations/{stations}/measure', 'MeasureController@update')
+    ->middleware(['auth:api', 'owner:stations']);
 
+//récit 3
+Route::put('stations/{stations}/measure', 'MeasureController@update')
+    ->middleware(['auth:api', 'owner:stations']);
 
-
-
-
-
+//récit 4
+Route::post('stations/{stations}/measures', 'MeasureController@store')
+    ->middleware(['auth:api', 'owner:stations']);

@@ -57,7 +57,6 @@ class ProfileController extends Controller
     {
 
         if ($user->profile == null) {
-            echo('--exist pas--');
             $profile = new Profile();
             $profile->ddn = $request->ddn;
             $profile->web_site_url = $request->web_site_url;
@@ -66,7 +65,6 @@ class ProfileController extends Controller
             $profile->user_id = $user->id;
             $user->profile = $profile;
         }else{
-            echo('--exist--');
             $user->profile->ddn = $request->ddn;
             $user->profile->web_site_url = $request->web_site_url;
             $user->profile->facebook_url = $request->facebook_url;

@@ -49,9 +49,13 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
         ],
-        "runTest": [
+        "runTestConnected": [
             "@php artisan migrate:refresh --seed",
             "@php artisan passport:client --personal --name=iot",
+            "phpunit"
+        ],
+        "runTestNotConnected": [
+            "@php artisan migrate:refresh --seed",
             "phpunit"
         ]
     },
