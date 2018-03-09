@@ -45,6 +45,7 @@ class StationController extends Controller
         $station->long = $request->input('long');
         $station->save();
         return new StationResource($station);
+
     }
 
     /**

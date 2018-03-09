@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Laravel\Passport\Passport;
 
 class MeasureTest extends TestCase
 {
@@ -40,13 +41,22 @@ class MeasureTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testGetColor()
+    public function testGetGreenColor()
     {
         $response = $this->get('/api/stations/2/measure',
             ['Accept'=> 'application/json'],
             ['Content-Type' => 'application/json']);
         $response->assertJsonFragment(['color' => 'Green']);
-        $response->assertStatus(200);
+
+    }
+
+    public function testGetRedColor()
+    {
+        $response = $this->get('/api/stations/1/measure',
+            ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json']);
+        $response->assertJsonFragment(['color' => 'Red']);
+
     }
 
     public function testGetMauvaisIndex()
@@ -59,16 +69,27 @@ class MeasureTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testPostMeasureOnSpecificStation()
+    public function test24h()
     {
-        $response = $this->post('/api/stations/1',
+        $response = $this->get('/api/stations/1/measure/24h',
             ['Accept'=> 'application/json'],
-            ['Content-Type' => 'application/json'],
-            ['description'=>'Co14', 'value'=>60]);
+            ['Content-Type' => 'application/json']);
 
-        $response->assertJsonFragment(['description'=>'Co14']);
-
+        $response->assertJsonFragment(['index' => 'Mauvais']);
+        $response->assertStatus(200);
     }
+
+    public function testPostMeasure()
+    {
+        $response = $this->post('/api/stations/1/measure',
+        ['description' => 'co14', 'value' => 60],
+        ['Accept' => 'application/json']);
+
+
+        $response->assertStatus(201);
+    }
+
+
 
 
 
