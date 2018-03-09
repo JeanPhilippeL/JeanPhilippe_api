@@ -10,7 +10,12 @@ use App\Http\Requests\MeasurePostRequest;
 class MeasureController extends Controller
 {
     //Display a listing of the resource.
-	public function index()
+
+
+
+
+
+    public function index()
 	{
         return Measure::all();
     }
@@ -28,9 +33,29 @@ class MeasureController extends Controller
     //#GET -- Display the specified resource.
     public function show(Station $station)
     {
-       $array = array($station->measure());
-       return $array;
+        $res = $station
+                ->measure()
+                ->get();
 
+        foreach($res as $item)
+        {
+            $value = $item->value;
+            if($value > 49)
+            {
+                $item->color = 'Yellow';
+                $item->index = 'Moyen';
+            }
+
+            if($value > 99)
+            {
+                $item->color = 'Red';
+                $item->index = 'Mauvais';
+            }
+
+
+        }
+
+        return $res;
     }
 
     // Update the specified resource in storage.
@@ -50,4 +75,13 @@ class MeasureController extends Controller
         Measure::destroy($measure->id);
         //return new Measure($measure);
     }
+
+    public function getColor($value)
+    {
+	    return 'Green';
+    }
+
+
+
+
 }

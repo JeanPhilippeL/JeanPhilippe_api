@@ -3,9 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Station;
 
 class Measure extends Model
 {
+
 
     public function station()
     {
@@ -14,6 +16,10 @@ class Measure extends Model
 
     protected $fillable = ['value', 'description'];
     //protected $table = 'MeasureTable';
+
+
+
+
 
 
 }

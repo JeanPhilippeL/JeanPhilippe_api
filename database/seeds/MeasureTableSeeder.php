@@ -18,6 +18,12 @@ class MeasureTableSeeder extends Seeder
         $measure->station_id = 1;
         $measure->save();
 
+        $measure = new Measure();
+        $measure->value = 600;
+        $measure->description = 'Co2';
+        $measure->station_id = 1;
+        $measure->save();
+
 
         $measure = new Measure();
         $measure->value = 3;

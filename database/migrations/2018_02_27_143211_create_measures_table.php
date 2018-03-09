@@ -19,6 +19,8 @@ class CreateMeasuresTable extends Migration
             $table->foreign('station_id')->references('id')->on('stations');
 			$table->double('value');
 			$table->string('description');
+			$table->string('color')->default('Green');
+			$table->string('index')->default('Bon');
             $table->timestamps();
         });
     }
