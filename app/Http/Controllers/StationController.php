@@ -25,32 +25,36 @@ class StationController extends Controller
         $station->name = $request->input('name');
         $station->lat = $request->input('lat');
         $station->long = $request->input('long');
+        $station->user_id = $request->input('user_id');
         $station->save();
         return new StationResource($station);
 
     }
-    public function show(Station $station)
+    public function show(Station $stations)
     {
-        return new StationResource($station);
+        return new StationResource($stations);
     }
     public function edit(Station $station)
     {
         //
     }
-    public function update(StationPostRequest $request, Station $station)
+    public function update(StationPostRequest $request, Station $stations)
     {
-        $station->name = $request->input('name');
-        $station->lat = $request->input('lat');
-        $station->long = $request->input('long');
-        $station->save();
+        $stations->name = $request->input('name');
+        $stations->lat = $request->input('lat');
+        $stations->long = $request->input('long');
+        $stations->user_id = $request->input('user_id');
+        $stations->save();
 
-        return new StationResource($station);
+        return new StationResource($stations);
     }
-    public function destroy(Station $station)
+    public function destroy(Station $stations)
     {
-        Station::destroy($station->id);
-        if($station->delete()){
-            return new StationResource($station);
+        $collection = $stations->measure()->get();
+        foreach($collection as $item)
+        {
+            $item->delete();
         }
+            $stations->delete();
     }
 }

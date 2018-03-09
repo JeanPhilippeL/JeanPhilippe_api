@@ -81,11 +81,25 @@ class MeasureTest extends TestCase
 
     public function testPostMeasure()
     {
+        Passport::actingAs(
+            \App\User::find(1)
+        );
         $response = $this->post('/api/stations/1/measures',
             ['description' => 'co14', 'value' => 60],
             ['Accept' => 'application/json']);
 
 
         $response->assertStatus(201);
+    }
+
+    public function testPostUnauthorizedMeasure()
+    {
+
+        $response = $this->post('/api/stations/1/measures',
+            ['description' => 'co14', 'value' => 60],
+            ['Accept' => 'application/json']);
+
+
+        $response->assertStatus(401);
     }
 }

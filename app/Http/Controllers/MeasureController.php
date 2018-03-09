@@ -62,20 +62,12 @@ class MeasureController extends Controller
 
     }
 
-    // Update the specified resource in storage.
-    public function update(MeasurePostRequest $request, Measure $measure)
-    {
-        if ($measure->exists) {
-            $measure->value = $request->input('value');
-            $measure->description = $request->input('description');
-            $measure->save();
-            return new MeasureResource($measure);
-        }
-    }
+
 
     // Remove the specified resource from storage.
     public function destroy(Measure $measure)
     {
+        $measure->delete();
     }
 
     public function setColor($value)

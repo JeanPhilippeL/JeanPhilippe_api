@@ -27,7 +27,7 @@ class StationPostRequest extends FormRequest
             'name' => 'required|String',
             'lat' => 'required|String',
             'long' => 'required|String',
-
+            'user_id' => 'required|Integer'
         ];
     }
 }
