@@ -20,10 +20,11 @@ class MeasureController extends Controller
         return Measure::all();
     }
 
-    public function store(MeasurePostRequest $request)
+    public function store(MeasurePostRequest $request, Station $station)
     {
         //#POST -- Add Specified request
         $measure = new Measure;
+        $measure->station_id = $station->station_id;
         $measure->value = $request->input('value');
         $measure->description = $request->input('description');
         $measure->save();

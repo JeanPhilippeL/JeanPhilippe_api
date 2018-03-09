@@ -59,6 +59,17 @@ class MeasureTest extends TestCase
         $response->assertStatus(200);
     }
 
+    public function testPostMeasureOnSpecificStation()
+    {
+        $response = $this->post('/api/stations/1',
+            ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json'],
+            ['description'=>'Co14', 'value'=>60]);
+
+        $response->assertJsonFragment(['description'=>'Co14']);
+
+    }
+
 
 
 

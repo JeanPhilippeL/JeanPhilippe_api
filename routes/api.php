@@ -20,6 +20,6 @@ Route::get('users/{user}/profile', 'ProfileController@show');
 Route::put('users/{user}/profile', 'ProfileController@update');
 
 Route::get('stations/{station}/measure', 'MeasureController@show');
-Route::put('stations/{station}/measure', 'MeasureController@update');
 
+Route::post('stations/{station}', 'MeasureController@store');
 
