@@ -11,6 +11,6 @@ class StationResource extends Resource
      */
     public function toArray($request)
     {
-        return ['Name' => $this->name, 'Latitude' => $this->lat, 'Longitude' => $this->long,];
+        return ['Name' => $this->name, 'Latitude' => $this->lat, 'Longitude' => $this->long];
     }
 }

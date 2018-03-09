@@ -14,27 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-/*
-Public
-Route::get('stations/{station}', 'StationController@show');
-Route::get('stations', 'StationController@index');
-
-
-Protégé
-Route::post('stations', 'StationController@store')->middleware(['auth:api']);
-Route::middleware('auth:api')->get('/user', function (Request $request) {
- return $request->user();
-});
-
-
-Protégé avec vérification du propriétaire (owner)
-Route::delete('stations/{stations}', 'StationController@destroy')
-->middleware(['auth:api', 'owner:stations']);
-Route::put('stations/{stations}', 'StationController@update')
-->middleware(['auth:api', 'owner:stations']);
- */
-
 //récit 1
 Route::post('/register', 'UserController@store');
 
@@ -57,5 +36,8 @@ Route::put('stations/{stations}/measure', 'MeasureController@update')
     ->middleware(['auth:api', 'owner:stations']);
 
 //récit 4
-Route::post('stations/{stations}/measures', 'MeasureController@store')
-    ->middleware(['auth:api', 'owner:stations']);
+Route::post('stations/{stations}/measures', 'MeasureController@store');
+   // ->middleware(['auth:api', 'owner:stations']);
+
+Route::get('stations/{station}/measure', 'MeasureController@show');
+Route::get('stations/{station}/measure/24h', 'MeasureController@show24h');

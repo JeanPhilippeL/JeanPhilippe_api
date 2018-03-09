@@ -16,7 +16,7 @@ class ProfileTest extends TestCase
      * @return void
      */
 
-
+/*
     public function testPostNotExistProfileTest()
     {
         $response = $this->put('/api/users/2/profile',
@@ -111,5 +111,5 @@ class ProfileTest extends TestCase
     {
         $response = $this->get('/api/users/-1/profile',['Accept'=> 'application/json']);
         $response->assertStatus(404);
-    }
+    }*/
 }

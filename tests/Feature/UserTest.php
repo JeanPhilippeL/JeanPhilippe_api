@@ -112,7 +112,7 @@ class UserTest extends TestCase
 
         $response = $this->post('api/register',
             ['name'=> 'Alia',
-                'email'=> 'aliamail@hotmail.com',
+                'email'=> 'aliamaria@hotmail.com',
                 'password'=> 'abc123456'],
             ['Accept'=> 'application/json']);
 

@@ -1,10 +1,11 @@
 <?php
+
 namespace Tests\Feature;
-use Laravel\Passport\Passport;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\User;
+use Laravel\Passport\Passport;
 
 class StationTest extends TestCase
 {
@@ -21,8 +22,10 @@ class StationTest extends TestCase
         $response = $this->post('/api/stations',
             ['name' => 'Test-A', 'lat' => '180', 'long' => '135'],
             ['Accept' => 'application/json']);
+
         $response->assertStatus(201);
     }
+
     public function testPostStationWithoutName()
     {
         Passport::actingAs(
@@ -31,8 +34,10 @@ class StationTest extends TestCase
         $response = $this->post('/api/stations',
             ['lat' => '180', 'long' => '135'],
             ['Accept' => 'application/json']);
+
         $response->assertStatus(422);
     }
+
     public function testPostStationWithoutLat()
     {
         Passport::actingAs(
@@ -41,8 +46,10 @@ class StationTest extends TestCase
         $response = $this->post('/api/stations',
             ['name' => 'Test-A', 'long' => '135'],
             ['Accept' => 'application/json']);
+
         $response->assertStatus(422);
     }
+
     public function testPostStationWithoutLong()
     {
         Passport::actingAs(
@@ -51,12 +58,16 @@ class StationTest extends TestCase
         $response = $this->post('/api/stations',
             ['name' => 'Test-A', 'lat' => '180',],
             ['Accept' => 'application/json']);
+
         $response->assertStatus(422);
     }
+
     /*public function testDeleteStation()
     {
-        $response = $this->delete('/api/stations/1');
+        $response = $this->put('/api/stations/1');
         ['Accept' => 'application/json'];
+
         $response->assertStatus(302);
     }*/
+
 }

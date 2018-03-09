@@ -4,98 +4,88 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Laravel\Passport\Passport;
 
 class MeasureTest extends TestCase
 {
     use DatabaseTransactions;
 
-    public function testPostMeasureTest()
-    {
-        $response = $this->post('/api/measures',
-            ['value'=> '30', 'description'=>'co1'],
-            ['Accept'=> 'application/json']);
-
-        $response->assertJsonFragment(['Value'=>'30']);
-        $response->assertStatus(201);
-    }
-
-    public function testPostMeasureWithoutValueTest()
-    {
-        $response = $this->post('/api/measures', ['description'=>'co2'],
-            ['Accept'=> 'application/json']);
-        $response->assertJsonFragment(["value"=>["The value field is required."]]);
-        $response->assertStatus(422);
-    }
-
-    public function testPostMeasureWithoutDescriptionTest()
-    {
-        $response = $this->post('/api/measures', ['value'=> '3'],
-            ['Accept'=> 'application/json']);
-        $response->assertJsonFragment(["description"=>["The description field is required."]]);
-        $response->assertStatus(422);
-    }
-
     public function testGetMeasureTest()
     {
-        $this->post('/api/measures',
-            ['value'=> '1', 'description'=>'co1'],
-            ['Accept'=> 'application/json']);
+        $response = $this->get('/api/stations/1/measure',
+            ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json']);
 
-
-        $response = $this->get('/api/measures/1',['Accept'=> 'application/json']);
-        $response->assertJsonFragment(['Description']);
+        $response->assertJsonFragment(['value' => 400]);
         $response->assertStatus(200);
     }
 
-    public function testPutMeasureTest()
+    public function testGetMultipleMeasuresTest()
     {
-        $this->put('/api/measures/1',
-            ['value'=> '3', 'description'=>'co15'],
-            ['Accept'=> 'application/json']);
+        $response = $this->get('/api/stations/1/measure',
+            ['Accept' => 'application/json'],
+            ['Content-Type' => 'application/json']);
 
-        $response = $this->get('/api/measures/1',['Accept'=> 'application/json']);
+        $response->assertJsonFragment(['value' => 400]);
+        $response->assertJsonFragment(['value' => 600]);
         $response->assertStatus(200);
-        $response->assertJsonFragment(['Description'=>'co15']);
     }
 
-    public function testIncorrectValuePutMeasureTest()
+    public function testGetMeasureOnStationOtherThanTheFirstOneTest()
     {
-        $response = $this->put('/api/measures/1',
-            ['value'=> 'a', 'description'=>'co15'],
-            ['Accept'=> 'application/json']);
+        $response = $this->get('/api/stations/2/measure',
+            ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json']);
 
-        //$response = $this->get('/api/measures/1',['Accept'=> 'application/json']);
-        $response->assertStatus(422);
+        $response->assertJsonFragment(['value' => 3]);
+        $response->assertStatus(200);
     }
 
-    public function testIncorrectDescriptionPutMeasureTest()
+    public function testGetGreenColor()
     {
-        $response = $this->put('/api/measures/1',
-            ['value'=> '1', 'description'=>''],
-            ['Accept'=> 'application/json']);
-        $response->assertStatus(422);
+        $response = $this->get('/api/stations/2/measure',
+            ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json']);
+        $response->assertJsonFragment(['color' => 'Green']);
+
     }
 
-    public function testIncorrectDescriptionAndValuePutMeasureTest()
+    public function testGetRedColor()
     {
-        $response = $this->put('/api/measures/1',
-            ['value'=> '1', 'description'=>''],
-            ['Accept'=> 'application/json']);
-        $response->assertStatus(422);
+        $response = $this->get('/api/stations/1/measure',
+            ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json']);
+        $response->assertJsonFragment(['color' => 'Red']);
+
     }
 
-    public function testDeleteMeasureTest()
+    public function testGetMauvaisIndex()
     {
-        $this->delete('/api/measures/1',
-            ['Accept'=> 'application/json']);
+        $response = $this->get('/api/stations/1/measure',
+            ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json']);
 
-        $response = $this->get('/api/measures/1',['Accept'=> 'application/json']);
-
-        $response->assertStatus(404);
+        $response->assertJsonFragment(['index' => 'Mauvais']);
+        $response->assertStatus(200);
     }
 
-    public function testExample()
+    public function test24h()
     {
-        $this->assertTrue(true);
+        $response = $this->get('/api/stations/1/measure/24h',
+            ['Accept'=> 'application/json'],
+            ['Content-Type' => 'application/json']);
+
+        $response->assertJsonFragment(['index' => 'Mauvais']);
+        $response->assertStatus(200);
+    }
+
+    public function testPostMeasure()
+    {
+        $response = $this->post('/api/stations/1/measures',
+            ['description' => 'co14', 'value' => 60],
+            ['Accept' => 'application/json']);
+
+
+        $response->assertStatus(201);
     }
 }
