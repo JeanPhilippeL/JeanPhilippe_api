@@ -13,7 +13,7 @@ class MeasureTest extends TestCase
     public function testGetMeasureTest()
     {
         $response = $this->get('/api/stations/1/measure',
-        ['Accept'=> 'application/json'],
+            ['Accept'=> 'application/json'],
             ['Content-Type' => 'application/json']);
 
         $response->assertJsonFragment(['value' => 400]);
@@ -81,20 +81,25 @@ class MeasureTest extends TestCase
 
     public function testPostMeasure()
     {
-        $response = $this->post('/api/stations/1/measure',
-        ['description' => 'co14', 'value' => 60],
-        ['Accept' => 'application/json']);
+        Passport::actingAs(
+            \App\User::find(1)
+        );
+        $response = $this->post('/api/stations/1/measures',
+            ['description' => 'co14', 'value' => 60],
+            ['Accept' => 'application/json']);
 
 
         $response->assertStatus(201);
     }
 
+    public function testPostUnauthorizedMeasure()
+    {
+
+        $response = $this->post('/api/stations/1/measures',
+            ['description' => 'co14', 'value' => 60],
+            ['Accept' => 'application/json']);
 
 
-
-
-
-
-
-
+        $response->assertStatus(401);
+    }
 }

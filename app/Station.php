@@ -12,7 +12,12 @@ class Station extends Model
         return $this->hasMany('App\Measure');
     }
 
-    protected $fillable = ['name', 'lat', 'long'];
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+
+    protected $fillable = ['name', 'lat', 'long', 'user_id'];
 
 
 }

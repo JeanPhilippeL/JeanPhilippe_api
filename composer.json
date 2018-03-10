@@ -8,7 +8,7 @@
         "php": ">=7.0.0",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
-        "laravel/passport": "4.0",
+        "laravel/passport": "4.0.3",
         "laravel/tinker": "~1.0"
     },
     "require-dev": {
@@ -48,6 +48,15 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
+        ],
+        "runTestConnected": [
+            "@php artisan migrate:refresh --seed",
+            "@php artisan passport:client --personal --name=iot",
+            "phpunit"
+        ],
+        "runTestNotConnected": [
+            "@php artisan migrate:refresh --seed",
+            "phpunit"
         ]
     },
     "config": {

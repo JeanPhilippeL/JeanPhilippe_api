@@ -1,7 +1,10 @@
 <?php
+
 namespace App\Http\Resources;
+
 use Illuminate\Http\Resources\Json\Resource;
-class StationResource extends Resource
+
+class UserResource extends Resource
 {
     /**
      * Transform the resource into an array.
@@ -11,6 +14,6 @@ class StationResource extends Resource
      */
     public function toArray($request)
     {
-        return ['Name' => $this->name, 'Latitude' => $this->lat, 'Longitude' => $this->long];
+        return parent::toArray($request);
     }
 }

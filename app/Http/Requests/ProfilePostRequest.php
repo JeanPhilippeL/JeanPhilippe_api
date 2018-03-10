@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StationPostRequest extends FormRequest
+class ProfilePostRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,10 @@ class StationPostRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|String',
-            'lat' => 'required|String',
-            'long' => 'required|String',
-            'user_id' => 'required|Integer'
+            'ddn' => 'required|Date',
+            'web_site_url' => 'String',
+            'facebook_url' => 'String',
+            'linkedin_url' => 'String'
         ];
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,17 +13,23 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post('stations/{station}/measure', 'MeasureController@store');
 
-Route::apiResource('stations', 'StationController');
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-Route::get('users/{user}/profile', 'ProfileController@show');
-Route::put('users/{user}/profile', 'ProfileController@update');
+//récit 1
+Route::post('/register', 'UserController@store'); //ok
 
-Route::get('stations/{station}/measure', 'MeasureController@show');
-Route::get('stations/{station}/measure/24h', 'MeasureController@show24h');
+//récit 2 & 3
+Route::get('stations/{stations}', 'StationController@show'); //ok
+Route::get('stations/', 'StationController@show'); //ok
+Route::post('stations', 'StationController@store')->middleware(['auth:api']); //ok
 
+Route::put('stations/{stations}', 'StationController@update') //ok
+    ->middleware(['auth:api', 'owner:stations']);
+Route::delete('stations/{stations}', 'StationController@destroy') //unauthorized
+   ->middleware(['auth:api', 'owner:stations']);
 
+//récit 4
+Route::post('stations/{stations}/measures', 'MeasureController@store') //ok
+    ->middleware(['auth:api', 'owner:stations']);
 
+Route::get('stations/{station}/measure', 'MeasureController@show'); //ok
+Route::get('stations/{station}/measure/24h', 'MeasureController@show24h'); //ok

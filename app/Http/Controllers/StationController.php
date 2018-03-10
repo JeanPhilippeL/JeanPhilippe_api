@@ -10,94 +10,51 @@ use App\Http\Controllers\Controller;
 
 class StationController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $stations = Station::paginate(5);
         return StationResource::collection($stations);
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         //
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(StationPostRequest $request)
     {
         $station = new Station();
         $station->name = $request->input('name');
         $station->lat = $request->input('lat');
         $station->long = $request->input('long');
+        $station->user_id = $request->input('user_id');
         $station->save();
         return new StationResource($station);
 
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Station  $station
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Station $station)
+    public function show(Station $stations)
     {
-        return new StationResource($station);
+        return new StationResource($stations);
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Station  $station
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Station $station)
     {
         //
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Station  $station
-     * @return \Illuminate\Http\Response
-     */
-    public function update(StationPostRequest $request, Station $station)
+    public function update(StationPostRequest $request, Station $stations)
     {
-        $station->name = $request->input('name');
-        $station->lat = $request->input('lat');
-        $station->long = $request->input('long');
-        $station->save();
+        $stations->name = $request->input('name');
+        $stations->lat = $request->input('lat');
+        $stations->long = $request->input('long');
+        $stations->user_id = $request->input('user_id');
+        $stations->save();
 
-        return new StationResource($station);
+        return new StationResource($stations);
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Station  $station
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Station $station)
+    public function destroy(Station $stations)
     {
-        Station::destroy($station->id);
-        if($station->delete()){
-            return new StationResource($station);
+        $collection = $stations->measure()->get();
+        foreach($collection as $item)
+        {
+            $item->delete();
         }
+            $stations->delete();
     }
 }

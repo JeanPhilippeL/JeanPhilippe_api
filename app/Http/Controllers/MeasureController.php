@@ -10,22 +10,17 @@ use Carbon\Carbon;
 
 class MeasureController extends Controller
 {
-    //Display a listing of the resource.
-
-
-
-
 
     public function index()
-	{
+    {
         return Measure::all();
     }
 
-    public function store(MeasurePostRequest $request, Station $station)
+    public function store(MeasurePostRequest $request, Station $stations)
     {
         //#POST -- Add Specified request
         $measure = new Measure();
-        $measure->station_id = $station->id;
+        $measure->station_id = $stations->id;
         $measure->value = $request->input('value');
         $measure->description = $request->input('description');
         $measure->save();
@@ -37,11 +32,10 @@ class MeasureController extends Controller
     public function show(Station $station)
     {
         $res = $station
-                ->measure()
-                ->get();
+            ->measure()
+            ->get();
 
-        foreach($res as $item)
-        {
+        foreach ($res as $item) {
             $value = $item->value;
             $item->color = $this->setColor($value);
             $item->index = $this->setIndex($value);
@@ -59,8 +53,7 @@ class MeasureController extends Controller
             ->whereBetween('created_at',
                 array($fromDate->toDateTimeString(), $toDate->toDateTimeString()))->get();
 
-        foreach($measuresCollection as $item)
-        {
+        foreach ($measuresCollection as $item) {
             $value = $item->value;
             $item->color = $this->setColor($value);
             $item->index = $this->setIndex($value);
@@ -68,32 +61,23 @@ class MeasureController extends Controller
         return $measuresCollection;
 
     }
-    // Update the specified resource in storage.
-    public function update(MeasurePostRequest $request, Measure $measure)
-    {
-        if($measure->exists){
-            $measure->value = $request->input('value');
-            $measure->description = $request->input('description');
-            $measure->save();
-            return new MeasureResource($measure);
-        }
-    }
+
+
 
     // Remove the specified resource from storage.
     public function destroy(Measure $measure)
     {
+        $measure->delete();
     }
 
     public function setColor($value)
     {
-       $color = 'Green';
+        $color = 'Green';
 
-        if($value > 49)
-        {
+        if ($value > 49) {
             $color = 'Yellow';
         }
-        if($value > 99)
-        {
+        if ($value > 99) {
             $color = 'Red';
         }
         return $color;
@@ -102,21 +86,13 @@ class MeasureController extends Controller
     public function setIndex($value)
     {
         $index = 'Bon';
-        if($value > 49)
-        {
+        if ($value > 49) {
             $index = 'Moyen';
         }
-        if($value > 99)
-        {
+        if ($value > 99) {
             $index = 'Mauvais';
         }
         return $index;
     }
-
-
-
-
-
-
-
 }
+
